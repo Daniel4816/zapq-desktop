@@ -1,6 +1,6 @@
 @echo off
-set threads=%NUMBER_OF_PROCESSORS%
 set zpaq_exe=%appdata%\zpaq\zpaq64.exe
+set threads=%NUMBER_OF_PROCESSORS%
 set input_path=%1
 echo %input_path% | findstr /r "^\" \"$"
 if errorlevel 1 (goto skip) else (set input_path=%input_path:~1,-1%)
